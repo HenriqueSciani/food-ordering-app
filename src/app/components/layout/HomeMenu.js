@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import MenuItem from "src/app/components/menu/MenuItem.js"
 export default function HomeMenu() {
   return (
     <section className="">
@@ -11,11 +11,13 @@ export default function HomeMenu() {
           <Image src={'/sallad2.png'} width={107} height={195} alt={'sallad'} />
         </div>
       </div>
-      <div className="text-center mb-4">
-        <h3 className="uppercase text-gray-500 font-semibold leading-4">Check Out</h3>
-      </div>
-      <h2 className="text-primary font-bold text-4xl italic">Menu</h2>
-      <div className="grid sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4">
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
       </div>
     </section>
   );
